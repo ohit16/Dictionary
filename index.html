@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Dictionary</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1> ~ Mini Dictionary ~ </h1>
+  <P id="note"><i> NOTE :- You can search synonymas , antonymas , audio & part of speech ...</i> </P>
+  <input type="text" name="word" id="word" placeholder="Search..."><br>
+  <audio id="myAudio" class="hide" controls></audio>
+ 
+
+  <div id="outer">
+    <div id="inner">
+
+      <!-- Part Of Speech -->
+      <div class="ans">
+        <h3 id="heading" class="headings"></h3>
+        <ul id="partOfSpeech"></ul>
+      </div>
+      <!-- Antonymas -->
+      <div class="ans">
+        <h3 id="antoheading" class="headings"></h3>
+        <ul id="antolist"></ul>
+      </div>
+      <!-- Synonymas -->
+      <div class="ans">
+        <h3 id="synoheading" class="headings"></h3>
+        <ul id="synolist"></ul>
+
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

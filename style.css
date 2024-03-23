@@ -1,0 +1,129 @@
+body {
+    background-color: antiquewhite;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 20px;
+}
+
+h1 {
+    color: rgb(79, 1, 79);
+}
+
+#note {
+    font-size: large;
+    letter-spacing: 1px;
+    color: rgb(83, 0, 83);
+}
+
+#word {
+    height: 35px;
+    width: 300px;
+    border-radius: 10px;
+    font-size: 21px;
+    border: 2px solid black;
+}
+
+#myAudio {
+    margin-top: 20px;
+    height: 45px;
+    width: 250px;
+    background-color: #000000;
+}
+
+#myAudio:hover {
+    cursor: pointer;
+
+}
+
+#outer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#inner {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    padding: 3px;
+}
+
+
+.headings {
+    color: #000000;
+    font-size: x-large;
+}
+
+li {
+    list-style-type: none;
+    color: #262A56;
+    font-size: large;
+    line-height: 30px;
+    margin-right: 25px;
+}
+
+.ans {
+    margin: 10px;
+}
+
+
+
+@media(max-width:365px) {
+    h1 {
+        font-size: x-large;
+    }
+
+    #note {
+        font-size: medium;
+    }
+
+    #word {
+        width: 200px;
+        height: 30px;
+        font-size: medium;
+    }
+
+    #myAudio {
+        height: 36px;
+        width: 200px;
+    }
+
+    .headings {
+        font-size: 19px;
+    }
+ }
+.hide{
+    display: none;
+} 
+
+@media(max-width:284px) {
+    h1 {
+        font-size: 19px;
+    }
+
+    #note {
+        font-size: small;
+    }
+
+    #word {
+        width: 145px;
+        height: 25px;
+        font-size: small;
+    }
+
+    #myAudio {
+        height: 30px;
+        width: 140px;
+    }
+
+    .headings {
+        font-size: 17px;
+    }
+
+    #inner {
+        width: 195px;
+    }
+
+}
